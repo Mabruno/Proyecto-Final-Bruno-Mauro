@@ -104,7 +104,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_ROOT = 'C:/Users/mauro/OneDrive/Desktop/Web_MDev/static'
+
 STATIC_URL = 'WebMDev_app/static/'
 
 # Default primary key field type

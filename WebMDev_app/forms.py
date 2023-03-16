@@ -27,7 +27,7 @@ class UserRegisterForm(UserCreationForm):
 
 class Compraform(forms.Form):
     username = forms.CharField(max_length=40)
-    pago = forms.CharField()
+    pago = forms.CharField(max_length=40)
     envio = forms.CharField(max_length=40)
     mensaje = forms.CharField(max_length=200)
 

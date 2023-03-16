@@ -87,9 +87,9 @@ def login_request(request):
         if form.is_valid():
 
             usuario = form.cleaned_data.get('username')
-            contraseña = form.cleaned_data.get('password')
+            contrasenia = form.cleaned_data.get('password')
 
-            user = authenticate(username=usuario, password=contraseña)
+            user = authenticate(username=usuario, password=contrasenia)
 
             if user is not None:
                 login(request, user)
@@ -163,6 +163,8 @@ def compra(request):
 
             return render(request, "inicio.html", {"mensaje": f"Su mensaje fue enviado"})
 
+        else:
+            print(formulario_compra.errors)
 
     else:
 

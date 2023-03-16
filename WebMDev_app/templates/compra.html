@@ -39,9 +39,7 @@
 
             {% endif %}
 
-    </form>
-
-            <form class="col-md-9 m-auto" method="POST" >{% csrf_token %}
+            <form class="col-md-9 m-auto" method="post" >{% csrf_token %}
                 <div class="row">
                     <div class="form-group col-md-6 mb-3">
                         <label for="username">Usuario</label>
@@ -59,7 +57,7 @@
                     <div class="mb-3">
                     <label for="mensaje">Mensaje</label>
                     <textarea class="form-control mt-1" id="mensaje" name="mensaje" placeholder="Mensaje" rows="8"></textarea>
-                </div>
+                    </div>
                 <div class="row">
                     <div class="col text-end mt-2">
                         <button type="submit" class="btn btn-success btn-lg px-3">Enviar</button>
